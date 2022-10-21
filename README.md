@@ -28,6 +28,17 @@ If the asterisk (indicating the current branch) does not appear next to master, 
 
     git checkout master
 
+## Branch indexing (repeat to all branches)
+    git checkout development
+    git push --set-upstream origin development
+
+    ... change code ...
+
+    git stage .
+    git commit -m "comments"
+
+    git push origin development
+
 # Getting Started with Create React App
 
 From npx [create-react-app](https://create-react-app.dev/docs/getting-started/) tutorial
